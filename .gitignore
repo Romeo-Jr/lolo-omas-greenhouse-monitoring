@@ -1,3 +1,6 @@
 firebase/config/
 firebase/__pycache__/
 mqtt/__pycache__/
+logs/
+
+haha.py
