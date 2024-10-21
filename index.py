@@ -7,7 +7,9 @@ if __name__ == '__main__':
   BROKER_ADDRESS = environ.get("BROKER_ADDRESS")
   PORT = int(environ.get("PORT"))
   TOPIC = environ.get("TOPIC")
+  USERNAME = environ.get("USERNAME")
+  PASSWORD = environ.get("PASSWORD")
 
-  subscriber = MqttSubscriber(BROKER_ADDRESS, PORT, TOPIC)
+  subscriber = MqttSubscriber(BROKER_ADDRESS, PORT, TOPIC, USERNAME, PASSWORD)
   subscriber.connect_to_broker()
   subscriber.subscribe_to_topic()
